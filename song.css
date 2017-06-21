@@ -82,7 +82,7 @@ html,body{
     position: absolute;
     border-radius: 50%;
 }
-.disc-container.playing .light,
+.disc-container.playing .lightshadow,
 .disc-container.playing .cover{
     animation: circle 20s infinite linear; 
 }
