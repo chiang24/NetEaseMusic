@@ -7,54 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>歌曲播放</title>
     <link rel="stylesheet" type="text/css" href="./song.css">
-<meta name="viewport" content="width=device-width, user-scalable ='no', initial-scale=1.0">
-  
-  <script>
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
 
-var scale = 1 / window.devicePixelRatio // 1\2\3
-document.write(`
+    <script>
+        var scale = 1 / window.devicePixelRatio // 1\2\3
+        document.write(
+            `
       <meta name="viewport"
         content="initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">
-      `)
-var width = document.documentElement.clientWidth / window.devicePixelRatio
-var css = `
+      `
+        )
+        var width = document.documentElement.clientWidth / window.devicePixelRatio
+        var css = `
     html{
       font-size: ${width / 10 * window.devicePixelRatio}px;
     }
     `
-document.write(`<style>${css}</style>`)
-  
-  </script>
+        document.write(`<style>${css}</style>`)
+    </script>
 </head>
 
 <body>
 
- <div class="wrapper">
- <div class="img"></div>
+    <div class="wrapper">
+        <div class="img"></div>
         <div class="disc-container">
             <img src="//s3.music.126.net/m/s/img/needle-ip6.png?be4ebbeb6befadfcae75ce174e7db862 " alt="" class="pointer">
 
             <div class="disc">
                 <img src="//s3.music.126.net/m/s/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48" alt="" class="ring">
                 <img src="//s3.music.126.net/m/s/img/disc_light-ip6.png?996fc8a2bc62e1ab3f51f135fc459577" alt="" class="lightshadow">
-                <img src="//p1.music.126.net/vI7FUa1XFEPlXP4h8TO2Uw==/833429813897281.webp?imageView&thumbnail=721x0&quality=75&tostatic=0&type=webp" alt="" class="cover">
+                <img src="//p1.music.126.net/vI7FUa1XFEPlXP4h8TO2Uw==/833429813897281.webp?imageView&thumbnail=721x0&quality=75&tostatic=0&type=webp"
+                    alt="" class="cover">
             </div>
         </div>
         <div class="song-description">
             <h2>Sooner-Andrew Allen</h2>
-  		<div class="lyric">
-				<div class="lines">
-					
-				</div>
-        </div>
+            <div class="lyric">
+                <div class="lines">
 
-    </div>
-            <div class="links">
+                </div>
+            </div>
+
+        </div>
+        <div class="links">
             <a href="#">打 开</a>
             <a href="#" class="download">下 载</a>
         </div>
-      </div>
-   
+    </div>
+
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="song.js"></script>
 </body>
