@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+@keyframes circle{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    html{
+   
+    }
+    
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    }
+    .img{
+    background-image:url(http://music.163.com/api/img/blur/833429813897281);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: 50%;
+    transform-origin: center top;
+    z-index: -1;
+    }
+.img::after{
+        content: " ";
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.disc-container {
+    position: relative;
+
+
+}
+
+.disc-container .pointer {
+    width: 2.55rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.3rem;
+}
+
+.disc-container .disc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.85rem;
+}
+
+.disc-container .ring {
+    width:7.93rem;
+}
+
+.disc-container .lightshadow {
+    width: 7.93rem;
+    position: absolute;
+   
+    animation: circle 20s infinite linear;
+}
+
+.disc-container .cover {
+    width: 5rem;
+    position: absolute;
+    border-radius:50%;
+    animation: circle 20s infinite linear;
+
+}
+
+.song-description {
+    	flex-grow: 1;
+	color: #AEABAC;
+	text-align: center;
+	line-height: 1.1;
+	margin-top: 0.7rem;
+}
+.song-description h2{
+	color: white;
+	font-size: 0.46rem;
+        font-weight: 400;
+
+}
+.song-description p{
+	font-size: 0.373rem;
+	line-height: 0.64rem;
+}
+.wrapper > .links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #D43B32;
+}
