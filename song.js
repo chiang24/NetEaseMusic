@@ -45,7 +45,7 @@ $(function () {
         })
     })
     let audio = document.createElement('audio')
-    audio.src = 'http://dl.stream.qqmusic.qq.com/C400000JNfAG4SlZTV.m4a?vkey=81568A82E80DC075FA6F0A68E819AB718D7C2077A25610F24E06E51B9096E5D8D80EC13A554B2D5A3223E3334C1C3194DD3E0EB54D77FCEF&guid=2629809800&uin=438085855&fromtag=66'
+    audio.src = '//dl.stream.qqmusic.qq.com/C400000JNfAG4SlZTV.m4a?vkey=81568A82E80DC075FA6F0A68E819AB718D7C2077A25610F24E06E51B9096E5D8D80EC13A554B2D5A3223E3334C1C3194DD3E0EB54D77FCEF&guid=2629809800&uin=438085855&fromtag=66'
     	audio.oncanplay = function(){
 		audio.play()
 		$('.disc-container').addClass('playing')
