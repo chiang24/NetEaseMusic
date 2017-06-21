@@ -16,17 +16,11 @@
         transform: rotate(360deg);
     }
 }
-
-    html{
-   
-    }
-    
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    }
+}
     .img{
     background-image:url(http://music.163.com/api/img/blur/833429813897281);
     background-repeat: no-repeat;
@@ -114,12 +108,12 @@
         display: flex;
         padding: 0 0.933rem;
         max-width: 9.17rem;
-        margin: 2.55rem 0 auto;
+        margin: 0 auto;
         box-sizing: content-box;
        
 }
 .wrapper > .links > a{
-	width: 35.4rem;
+	width: 3.85rem;
     height: 0.96rem;
 	text-align: center;
 	border: 1.5px solid #D43B32;
