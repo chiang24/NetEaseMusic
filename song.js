@@ -50,4 +50,12 @@ $(function () {
 		audio.play()
 		$('.disc-container').addClass('playing')
 	}
+    	$('.icon-pause').on('touchstart', function(){
+		audio.pause()	
+		$('.disc-container').removeClass('playing')
+	})
+	$('.icon-play').on('touchstart', function(){
+		audio.play()	
+		$('.disc-container').addClass('playing')
+	})
 })

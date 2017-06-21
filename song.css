@@ -75,14 +75,38 @@ html,body{
 .disc-container .lightshadow {
     width: 7.93rem;
     position: absolute;
-    animation: circle 20s infinite linear;
 }
 
 .disc-container .cover {
     width: 5rem;
     position: absolute;
     border-radius: 50%;
-    animation: circle 20s infinite linear;
+}
+.disc-container.playing .light,
+.disc-container.playing .cover{
+    animation: circle 20s infinite linear; 
+}
+
+.disc-container .icon-pause{
+    display: none;
+ }
+.disc-container.playing .icon-pause{
+    display: block;
+ }
+.disc-container.playing .icon-play{
+    display: none; 
+}
+.disc-container .icon-wrapper{position: absolute; z-index: 1; display: flex; 
+	justify-content: center;
+     align-items: center;
+	border: 1px solid white; 
+    height: 1.6rem; width: 1.6rem;
+	border-radius: 50%; 
+    background: rgba(0,0,0,0.5);
+}
+.disc-container .icon {
+    width: 0.8rem; 
+    fill: white;
 }
 
 .song-description {
