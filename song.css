@@ -8,7 +8,8 @@
 *::before {
     box-sizing: border-box;
 }
-@keyframes circle{
+
+@keyframes circle {
     0% {
         transform: rotate(0deg);
     }
@@ -16,13 +17,17 @@
         transform: rotate(360deg);
     }
 }
+html,body{
+    height: 100%;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-    .img{
-    background-image:url(http://music.163.com/api/img/blur/833429813897281);
+
+.img {
+    background-image: url(http://music.163.com/api/img/blur/833429813897281);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -33,20 +38,20 @@
     background-position: 50%;
     transform-origin: center top;
     z-index: -1;
-    }
-.img::after{
-        content: " ";
-    background-color: rgba(0,0,0,.5);
+}
+
+.img::after {
+    content: " ";
+    background-color: rgba(0, 0, 0, .5);
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
 }
+
 .disc-container {
     position: relative;
-
-
 }
 
 .disc-container .pointer {
@@ -64,74 +69,79 @@
 }
 
 .disc-container .ring {
-    width:7.93rem;
+    width: 7.93rem;
 }
 
 .disc-container .lightshadow {
     width: 7.93rem;
     position: absolute;
-   
     animation: circle 20s infinite linear;
 }
 
 .disc-container .cover {
     width: 5rem;
     position: absolute;
-    border-radius:50%;
+    border-radius: 50%;
     animation: circle 20s infinite linear;
-
 }
 
 .song-description {
     flex-grow: 1;
-	color: #AEABAC;
-	text-align: center;
-	line-height: 1.1;
-	margin-top: 0.666rem;
+    color: #AEABAC;
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 0.666rem;
 }
-.song-description h2{
-	color: white;
-	font-size: 0.46rem;
-        font-weight: 400;
 
+.song-description h2 {
+    color: white;
+    font-size: 0.46rem;
+    font-weight: 400;
 }
-.song-description p{
-	font-size: 0.373rem;
-	line-height: 0.64rem;
+
+.song-description p {
+    font-size: 0.373rem;
+    line-height: 0.64rem;
 }
-.song-description .lyric{
-	height: 2.453rem;
-    margin-top:0.373rem;
-	overflow: hidden;
+
+.song-description .lyric {
+    height: 2.453rem;
+    margin-top: 0.373rem;
+    overflow: hidden;
 }
-.wrapper> .links{
-        display: flex;
-        padding: 0 0.933rem;
-        margin: 2rem 0 auto;
-        box-sizing: content-box;  
+
+.wrapper>.links {
+    display: flex;
+    padding: 0 0.933rem;
+    margin:0 auto;
+    box-sizing: content-box;
+    margin-bottom: 0.533rem;
 }
-.wrapper > .links > a{
-	width: 3.85rem;
+
+.wrapper>.links>a {
+    width: 3.85rem;
     height: 0.96rem;
-	text-align: center;
-	border: 1.5px solid #D43B32;
-	background: transparent;
-	padding: 0.0016rem;
-	color: inherit;
-	text-decoration: none;
-	border-radius: 0.106rem;
+    text-align: center;
+    border: 1.5px solid #D43B32;
+    background: transparent;
+    padding: 0.0016rem;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 0.106rem;
     line-height: 0.96rem;
     font-size: 0.4rem;
     flex-shrink: 1;
 }
-.wrapper > .links > a.download{
-	background: #D43B32;
-	color: white;
+
+.wrapper>.links>a.download {
+    background: #D43B32;
+    color: white;
     margin-left: 0.32rem;
-}	
-.wrapper > .links{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #D43B32;
+}
+
+.wrapper>.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D43B32;
 }
