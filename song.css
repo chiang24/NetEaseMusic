@@ -148,11 +148,12 @@ html,body{
     display: flex;
     padding: 0 0.933rem;
     margin:0 auto;
-    box-sizing: content-box;
-      flex: 0 0 2.05rem;
-   justify-content: center;
-   align-items: center;
-   z-index: 10;
+    /*flex: 0 0 2.05rem;*/
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    bottom: 0.625rem;
 }
 
 .wrapper>.links>a {
