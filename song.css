@@ -101,9 +101,12 @@ html,body{
 .disc-container.playing .icon-play{
     display: none; 
 }
-.disc-container .icon-wrapper{position: absolute; z-index: 1; display: flex; 
+.disc-container .icon-wrapper{
+    position: absolute;
+    z-index: 1; 
+    display: flex; 
 	justify-content: center;
-     align-items: center;
+    align-items: center;
 	border: 1px solid white; 
     height: 1.6rem; width: 1.6rem;
 	border-radius: 50%; 
