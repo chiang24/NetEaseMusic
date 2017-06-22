@@ -17,11 +17,13 @@
         transform: rotate(360deg);
     }
 }
-html,body{
+
+html,
+body {
     height: 100%;
 }
+
 .wrapper {
-  
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -87,33 +89,39 @@ html,body{
     position: absolute;
     border-radius: 50%;
 }
+
 .disc-container.playing .lightshadow,
-.disc-container.playing .cover{
-    animation: circle 20s infinite linear; 
+.disc-container.playing .cover {
+    animation: circle 20s infinite linear;
 }
 
-.disc-container .icon-pause{
+.disc-container .icon-pause {
     display: none;
- }
-.disc-container.playing .icon-pause{
+}
+
+.disc-container.playing .icon-pause {
     display: block;
- }
-.disc-container.playing .icon-play{
-    display: none; 
 }
-.disc-container .icon-wrapper{
+
+.disc-container.playing .icon-play {
+    display: none;
+}
+
+.disc-container .icon-wrapper {
     position: absolute;
-    z-index: 1; 
-    display: flex; 
-	justify-content: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-	border: 1px solid white; 
-    height: 1.6rem; width: 1.6rem;
-	border-radius: 50%; 
-    background: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
 }
+
 .disc-container .icon {
-    width: 0.8rem; 
+    width: 0.8rem;
     fill: white;
 }
 
@@ -124,7 +132,6 @@ html,body{
     line-height: 1.1;
     margin-top: 0.666rem;
     position: relative;
-    
 }
 
 .song-description h2 {
@@ -146,17 +153,17 @@ html,body{
 
 .wrapper>.links {
     display: flex;
-    padding: 0 0.933rem;
     margin-left: auto;
     margin-right: auto;
     flex: 0 0 2.05rem;
     justify-content: center;
     align-items: center;
     z-index: 10;
+ 
 }
 
 .wrapper>.links>a {
-    width: 3.85rem;
+    width: 4.5rem;
     height: 0.94rem;
     text-align: center;
     border: 1.4px solid #D43B32;
@@ -167,7 +174,7 @@ html,body{
     border-radius: 0.106rem;
     line-height: 0.96rem;
     font-size: 0.4rem;
-    flex-shrink: 1;
+
 }
 
 .wrapper>.links>a.download {
