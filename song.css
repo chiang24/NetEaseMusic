@@ -21,23 +21,28 @@ html,body{
     height: 100%;
 }
 .wrapper {
+  
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-flow: column;
 }
 
 .img {
     background-image: url(http://music.163.com/api/img/blur/833429813897281);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
+    width: 100%;
+    height: 100%;
     background-position: 50%;
+    transform: scale(1.5);
     transform-origin: center top;
-    z-index: -1;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .img::after {
@@ -115,6 +120,8 @@ html,body{
     text-align: center;
     line-height: 1.1;
     margin-top: 0.666rem;
+    position: relative;
+    
 }
 
 .song-description h2 {
@@ -139,14 +146,17 @@ html,body{
     padding: 0 0.933rem;
     margin:0 auto;
     box-sizing: content-box;
-    margin-bottom: 0.533rem;
+      flex: 0 0 2.05rem;
+   justify-content: center;
+   align-items: center;
+   z-index: 10;
 }
 
 .wrapper>.links>a {
     width: 3.85rem;
-    height: 0.96rem;
+    height: 0.94rem;
     text-align: center;
-    border: 1.5px solid #D43B32;
+    border: 1.4px solid #D43B32;
     background: transparent;
     padding: 0.0016rem;
     color: inherit;
