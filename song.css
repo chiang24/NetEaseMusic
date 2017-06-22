@@ -147,14 +147,14 @@ html,body{
 .wrapper>.links {
     display: flex;
     padding: 0 0.933rem;
-    /*flex: 0 0 2.05rem;*/
+    flex: 0 0 2.05rem;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    position: absolute;
-    bottom: 0.625rem;
-    left: 50%;
-    transform: translateX(-50%);
+    /*position: absolute; */
+    /*bottom: 0.625rem;*/
+    /*left: 50%;
+    transform: translateX(-50%);*/
 }
 
 .wrapper>.links>a {
