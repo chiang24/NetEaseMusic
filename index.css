@@ -196,7 +196,7 @@ section>h2:first-child {
     text-align: center;
     padding-top: 1.76rem;
     padding-bottom: 0.35rem;
-    background-size: contain;
+    background-size: 100% 100%;
     position: relative;
 }
 
