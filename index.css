@@ -137,7 +137,7 @@ position: fixed;
 
 .newsong>ol li a {
     text-decoration: none;
-    display: block;
+    width: 100%;
 }
 
 .newsong>ol li a h3 {
@@ -149,12 +149,15 @@ position: fixed;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    white-space: nowrap;
+    word-break: normal;
 }
 
 .newsong>ol li a h3 span {
     color: #888;
     margin-left: 0.106rem;
 }
+.newsong>ol li a .songInfo{}
 
 .newsong>ol li a .songInfo p {
     font-size: 0.32rem;
@@ -165,6 +168,8 @@ position: fixed;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     margin-left: 0.42rem;
+    white-space: nowrap;
+    word-break: normal;
 }
 
 .newsong>ol li a .songInfo .playcircled {
