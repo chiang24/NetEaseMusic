@@ -19,19 +19,20 @@ section>h2:first-child {
     line-height: 1;
     color: #333;
 }
-
+.fixed{
+position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .topbar {
     background-color: #D43C33;
     padding: 0.46rem 0.26rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    margin-top:0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+
 }
 
 .topbar .topsvg {
@@ -53,10 +54,7 @@ section>h2:first-child {
     align-items: center;
     list-style-type: none;
     background: #fff;
-    position: fixed;
-    top: 1.706rem;
-    width: 100%;
-    z-index: 100;
+ 
 }
 
 .siteNav>ol li {
