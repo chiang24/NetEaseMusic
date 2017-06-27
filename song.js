@@ -1,7 +1,33 @@
 $(function () {
+    let id = parseInt(location.search.match(/\bid=([^&]*)/)[1], 10)
+    $.get('./songs.json').then(function (Response) {
+        let songs = Response
+        let song = songs.filter(s=>s.id === id)[0]
+        let {url} = song
+        let audio = document.createElement('audio')
+        audio.src = url
+        audio.oncanplay = function () {
+            audio.play()
+            $('.disc-container').addClass('playing')
+        }
+        $('.icon-pause').on('touchstart', function () {
+            audio.pause()
+            $('.disc-container').removeClass('playing')
+        })
+        $('.icon-play').on('touchstart', function () {
+            audio.play()
+            $('.disc-container').addClass('playing')
+        })
+
+    })
+
     $.get('./lyric.json').then(function (object) {
-        let {lyric} = object //let lyric = object.lyric
-        let {tlyric} = object
+        let {
+            lyric
+        } = object //let lyric = object.lyric
+        let {
+            tlyric
+        } = object
         let array = lyric.split('\n')
         let tarray = tlyric.split('\n')
         let regex = /^\[(.+)\](.*)$/
@@ -27,35 +53,22 @@ $(function () {
         // console.log(array)
         //  console.log(tarray)
         let $lyric = $('.lyric')
-        array.map(function(object){
-            if(!object){
+        array.map(function (object) {
+            if (!object) {
                 return
             }
             let $p = $('<p/>')
-            $p.attr('data-time',object.time).text(object.words)
+            $p.attr('data-time', object.time).text(object.words)
             $p.appendTo($lyric.children('.lines'))
         })
-            tarray.map(function(object){
-            if(!object){
+        tarray.map(function (object) {
+            if (!object) {
                 return
             }
             let $p = $('<p/>')
-            $p.attr('data-time',object.time).text(object.words)
+            $p.attr('data-time', object.time).text(object.words)
             $p.appendTo($lyric.children('.lines'))
         })
     })
-    let audio = document.createElement('audio')
-    audio.src = 'http://os08tn3ud.bkt.clouddn.com/C400000JNfAG4SlZTV.m4a'
-    	audio.oncanplay = function(){
-		audio.play()
-		$('.disc-container').addClass('playing')
-	}
-    	$('.icon-pause').on('touchstart', function(){
-		audio.pause()	
-		$('.disc-container').removeClass('playing')
-	})
-	$('.icon-play').on('touchstart', function(){
-		audio.play()	
-		$('.disc-container').addClass('playing')
-	})
+
 })

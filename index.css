@@ -119,7 +119,9 @@ position: fixed;
 }
 
 .newsong {}
-
+.newsong>p{
+    text-align: center;
+}
 .newsong ol {
     margin-top: -0.2rem;
     padding-left: 0.26rem;
@@ -157,19 +159,20 @@ position: fixed;
     color: #888;
     margin-left: 0.106rem;
 }
-.newsong>ol li a .songInfo{}
+
 
 .newsong>ol li a .songInfo p {
     font-size: 0.32rem;
     color: #888;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-left: 0.42rem;
     white-space: nowrap;
     word-break: normal;
+    padding-right: 1.2rem;
 }
 
 .newsong>ol li a .songInfo .playcircled {
