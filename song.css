@@ -148,6 +148,9 @@ body {
     font-size: 0.36rem;
     line-height: 0.64rem;
 }
+.song-description p.active {
+    color: white;
+}
 
 .song-description .lyric {
     height: 2rem;

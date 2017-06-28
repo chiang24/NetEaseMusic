@@ -33,7 +33,35 @@ $(function () {
        }
             $('.pointer').css(styles) 
         })
-}
+            setInterval(()=>{
+            let seconds = audio.currentTime
+            let munites = ~~(seconds / 60)
+            let left = seconds - munites * 60
+            let time = `${pad(munites)}:${pad(left)}`
+            let $lines = $('.lines > p')
+            let $whichline
+            for(let i=0;i<$lines.length;i++){
+                let currentLineTime = $lines.eq(i).attr('data-time')
+                let nextLineTime = $lines.eq(i+1).attr('data-time')
+                if($lines.eq(i+1).length !== 0 && currentLineTime < time && nextLineTime > time){
+                    $whichline = $lines.eq(i)
+                    break
+                }
+            }
+            if($whichline){
+                $whichline.addClass('active').prev().removeClass('active')
+                let top = $whichline.offset().top
+                let linesTop = $('.lines').offset().top
+                let delta = top - linesTop -$('.lyric').height()/3
+                $('.lines').css('transform',`translateY(-${delta}px)`)
+            }
+        },10)
+    }
+
+    function pad(number){
+        return number >=10 ? number + '':'0' + number
+    }
+
     function initText(name,lyric){
         $('.song-description>h2').text(name)
         parseLyric(lyric)
