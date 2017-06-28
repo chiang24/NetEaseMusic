@@ -32,7 +32,7 @@ body {
 }
 
 .img {
-    background-image: url(http://music.163.com/api/img/blur/833429813897281);
+    /*background-image: url(http://music.163.com/api/img/blur/833429813897281);*/
     position: absolute;
     left: 0;
     right: 0;
@@ -66,6 +66,7 @@ body {
     position: absolute;
     left: 50%;
     margin-left: -0.4rem;
+    transform-origin: left 0;
 }
 
 .disc-container .disc {
@@ -88,11 +89,13 @@ body {
     width: 5rem;
     position: absolute;
     border-radius: 50%;
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;
 }
 
 .disc-container.playing .lightshadow,
 .disc-container.playing .cover {
-    animation: circle 20s infinite linear;
+   animation-play-state: running;
 }
 
 .disc-container .icon-pause {
@@ -141,7 +144,7 @@ body {
 }
 
 .song-description p {
-    font-size: 0.34rem;
+    font-size: 0.36rem;
     line-height: 0.64rem;
 }
 
