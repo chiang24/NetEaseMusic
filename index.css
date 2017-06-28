@@ -20,7 +20,7 @@ section>h2:first-child {
     color: #333;
 }
 .fixed{
-position: fixed;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -28,7 +28,6 @@ position: fixed;
 }
 .topbar {
     background-color: #D43C33;
-    padding: 0.46rem 0.26rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +36,7 @@ position: fixed;
 
 .topbar .topsvg {
     width: 3.786rem;
+    padding: 0.56rem 0.26rem;
 }
 
 .topbar .downloadAPP {
@@ -48,13 +48,13 @@ position: fixed;
     padding: 0 0.26rem;
     text-decoration: none;
     display: block;
+    margin-right: 0.26rem;
 }
 .siteNav>ol {
     display: flex;
     align-items: center;
     list-style-type: none;
     background: #fff;
- 
 }
 
 .siteNav>ol li {
