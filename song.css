@@ -178,8 +178,7 @@ body {
     border-radius: 0.106rem;
     line-height: 0.94rem;
     font-size: 0.4rem;
-    margin-top:-1rem;
-
+    margin-bottom: 1rem;
 }
 
 .wrapper>.links>a.download {
@@ -190,7 +189,7 @@ body {
 
 .wrapper>.links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: #D43B32;
 }
