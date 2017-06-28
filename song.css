@@ -83,6 +83,7 @@ body {
 .disc-container .lightshadow {
     width: 7.93rem;
     position: absolute;
+    animation: circle 20s infinite linear;
 }
 
 .disc-container .cover {
