@@ -13,8 +13,13 @@ $(function () {
     let audio = document.createElement('audio')
         audio.src = url
         audio.oncanplay = function () {
-            audio.play()
-            $('.disc-container').addClass('playing')
+            audio.pause()
+            // $('.disc-container').addClass('playing')
+                        var styles = {
+            transition:".5s ease-in-out",
+            transform:"rotateZ(-14deg)"
+       }
+            $('.pointer').css(styles)  
         }
         $('.icon-pause').on('touchstart', function () {
             audio.pause()
