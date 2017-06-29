@@ -26,6 +26,12 @@ section>h2:first-child {
     left: 0;
     z-index: 100;
 }
+.tab-content > li.active {
+    display: block;
+}
+.tab-content > li {
+    display: none;
+}
 .topbar {
     background-color: #D43C33;
     display: flex;
@@ -79,10 +85,10 @@ section>h2:first-child {
 .siteNav>ol>li.active>span::before {
     content: "";
     position: absolute;
-    left: -0.12rem;
+    left: -0.08rem;
     bottom: -1px;
     border-top: 4px solid #D33A31;
-    width: 115%;
+    width: 118%;
 }
 
 .playlists {
@@ -234,4 +240,31 @@ section>h2:first-child {
     margin-top: 0.15rem;
     line-height: 0.466rem;
     transform: scale(.75);
+}
+
+/*热搜榜*/
+
+.hottop{
+    position: relative;
+    background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-top: 2.8rem;
+}
+.hotbanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.title{
+    background: url(http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-size: 4.414rem 2.579rem;
+        width: 3.776rem;
+    height: 0.01778rem;
+    background-position: -24px -30px;
+}
+.update{
+    font-size: 0.32rem;
 }

@@ -27,4 +27,30 @@ $(function(){
     }, function(){
     })
 },500)
+    $('.siteNav').on('click','ol.tab-items>li',function(e){
+        let $li =$(e.currentTarget).addClass('active')
+        $li.siblings().removeClass('active')
+        let index = $li.index()
+        $li.trigger('tabChange',index)
+        $('.tab-content>li').eq(index).addClass('active').siblings().removeClass('active')
+    })
+
+    $('.siteNav').on('tabChange',function(e,index){
+        let $li = $('.tab-content>li').eq(index)
+        if($li.attr('data-downloaded') === 'yes'){
+            return
+        }
+        if(index === 1){
+            $.get('./hotsongs.json').then((response)=>{
+                // $li.text(response.content)
+                $li.attr('data-downloaded','yes')
+            })
+        }else if(index === 2){
+            $.get('./search.json').then((response)=>{
+                $li.text(response.content)
+                $li.attr('data-downloaded','yes')
+            })
+        }
+    })
+
 })
