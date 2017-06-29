@@ -247,7 +247,7 @@ section>h2:first-child {
 .hottop{
     position: relative;
     background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     overflow: hidden;
     margin-top: 2.789rem;
 }
