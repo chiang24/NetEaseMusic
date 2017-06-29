@@ -97,7 +97,7 @@ $(function () {
             $p.attr('data-time', object.time).text(object.words)
             $p.appendTo($lyric.children('.lines'))
         })
-
+    }
         
 
     $.get('./songs.json').then(function(response){
