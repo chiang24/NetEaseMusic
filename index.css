@@ -133,7 +133,7 @@ section>h2:first-child {
     padding-left: 0.26rem;
 }
 
-.newsong>ol li {
+.newsong>ol li{
     white-space: nowrap;
     word-break: normal;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -247,24 +247,145 @@ section>h2:first-child {
 .hottop{
     position: relative;
     background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
-    background-size: 100% 100%;
+    /*background-size: contain;*/
     overflow: hidden;
-    margin-top: 2.8rem;
+    margin-top: 2.7885rem;
+}
+.hottop::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1;
 }
 .hotbanner{
     display: flex;
+    display: -webkit-box;
     flex-direction: column;
     justify-content: center;
-    
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    z-index:2;
+    padding-left: 0.533rem; 
+    padding-top:0.83rem;
+    padding-bottom: 0.564rem;
 }
+
 .title{
     background: url(http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
     background-size: 4.414rem 2.579rem;
-        width: 3.776rem;
-    height: 0.01778rem;
-    background-position: -24px -30px;
+    width: 3.776rem;
+    height: 1.786rem;
+    background-position: -0.64rem -0.8rem;
 }
 .update{
+    margin-top:0.266rem;
     font-size: 0.32rem;
+    -webkit-transform: scale(.91);
+    transform: scale(.91);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    color: hsla(0,0%,100%,.8);
+}
+.hotsongslist li{
+    white-space: nowrap;
+    word-break: normal;
+    position: relative;
+    display: flex;
+}
+.hotsongslist li a{
+    text-decoration: none;
+    display: flex;
+    padding-left: 0.3rem;
+    width: 100%;
+}
+.hotsongslist li:nth-child(1) .number,
+.hotsongslist li:nth-child(2) .number,
+.hotsongslist li:nth-child(3) .number
+{
+    color: #df3436;
+}
+.number{
+    font-size: 0.453rem;
+    color: #999;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.hotsongInfo{
+     margin-left: 0.9rem;
+     padding:0.16rem 0;
+     border-bottom: 1px solid rgba(0, 0, 0, .1);
+     position: relative;
+     flex: 1;
+
+}
+
+.hotsongInfo h3{
+    font-size: 0.453rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.72;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    word-break: normal;
+}
+.hotsongInfo span{
+    font-size: 0.453rem;
+    color:#888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 0.1rem;
+}
+.hotsongInfo p{
+    font-size: 0.32rem;
+    color:#888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    /*padding-right:0.053rem;*/
+    margin-top: -0.12rem;
+    padding-left: 0.45rem;
+    padding-top:0.14rem;
+}
+.hotsongslist li a .hotsongInfo .playcircled {
+    width: 0.586rem;
+    height: 0.586rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #aaa;
+}
+.hotsongslist li a .hotsongInfo .sq {
+    width: 0.37rem;
+    height: 0.37rem;
+    position: absolute;
+    margin-top: 0.23rem;
+    top: 50%;
+    margin-bottom: -5rem;
+    fill: #fe672e;
+    z-index: 10;
+}
+.moresongs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.5rem 0;
+}
+.moresongs>span{
+    display: inline-block;
+    color: #999;
+    font-size: 0.373rem;
+    
 }
