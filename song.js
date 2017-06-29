@@ -1,4 +1,5 @@
 $(function () {
+
     let id = parseInt(location.search.match(/\bid=([^&]*)/)[1], 10)
     $.get('./songs.json').then(function (response) {
         let songs = response
@@ -9,18 +10,20 @@ $(function () {
         initText(name,lyric)
 
     })
+
     function initPlayer(url){
     let audio = document.createElement('audio')
         audio.src = url
         audio.oncanplay = function () {
             audio.pause()
             // $('.disc-container').addClass('playing')
-                        var styles = {
-            transition:".5s ease-in-out",
+            var styles = {
+            // transition:".5s ease-in-out",
             transform:"rotateZ(-14deg)"
        }
             $('.pointer').css(styles)  
         }
+
         $('.icon-pause').on('touchstart', function () {
             audio.pause()
             $('.disc-container').removeClass('playing')
@@ -30,6 +33,7 @@ $(function () {
        }
             $('.pointer').css(styles)  
     })
+
         $('.icon-play').on('touchstart', function () {
             audio.play()
             $('.disc-container').addClass('playing')
@@ -93,15 +97,7 @@ $(function () {
             $p.attr('data-time', object.time).text(object.words)
             $p.appendTo($lyric.children('.lines'))
         })
-        tarray.map(function (object) {
-            if (!object) {
-                return
-            }
-            let $p = $('<p/>')
-            $p.attr('data-time', object.time).text(object.words)
-            $p.appendTo($lyric.children('.lines'))
-        })
-    }
+
         
 
     $.get('./songs.json').then(function(response){
