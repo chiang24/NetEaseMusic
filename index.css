@@ -178,7 +178,7 @@ section>h2:first-child {
     white-space: nowrap;
     word-break: normal;
     padding-right: 1.2rem;
-    max-width: 9.5rem; 
+    min-width: 9.5rem; 
     display: block; 
 }
 
@@ -326,12 +326,7 @@ section>h2:first-child {
      position: relative;
      flex: 1 1 auto;
      webkit-box-flex: 1;
-    /*flex: 1 1 auto;
-    padding: 6px 0;
-    width: 0;*/
     display: block;
-
-
 }
 
 .hotsongInfo h3{
