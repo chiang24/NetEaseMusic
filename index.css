@@ -259,7 +259,7 @@ section>h2:first-child {
     top: 0;
     bottom: 0;
     background-color: rgba(0,0,0,.2);
-    z-index: 1;
+  
 }
 .hotbanner{
     display: flex;
@@ -269,10 +269,11 @@ section>h2:first-child {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-box-pack: center;
-    z-index:2;
     padding-left: 0.533rem; 
-    padding-top:0.83rem;
-    padding-bottom: 0.564rem;
+    padding-top:0.7rem;
+    padding-bottom: 0.7rem;
+     position: relative;
+     z-index:2;
 }
 
 .title{
@@ -322,7 +323,11 @@ section>h2:first-child {
      padding:0.16rem 0;
      border-bottom: 1px solid rgba(0, 0, 0, .1);
      position: relative;
-     flex: 1;
+     flex: 1 1 auto;
+     webkit-box-flex: 1;
+    /*flex: 1 1 auto;
+    padding: 6px 0;
+    width: 0;*/
 
 }
 
@@ -337,19 +342,22 @@ section>h2:first-child {
     -webkit-box-orient: vertical;
     white-space: nowrap;
     word-break: normal;
+    
 }
 .hotsongInfo span{
     font-size: 0.453rem;
     color:#888;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     margin-left: 0.1rem;
 }
 .hotsongInfo p{
     font-size: 0.32rem;
     color:#888;
-    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -366,6 +374,7 @@ section>h2:first-child {
     top: 50%;
     transform: translateY(-50%);
     fill: #aaa;
+   
 }
 .hotsongslist li a .hotsongInfo .sq {
     width: 0.37rem;
