@@ -80,5 +80,5 @@ $(function(){
     $('#hotsongloading').remove()
     }, function(){
     })
-},500)
+},800)
 })
