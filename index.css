@@ -84,10 +84,10 @@ section>h2:first-child {
 .siteNav>ol>li.active>span::before {
     content: "";
     position: absolute;
-    left: -0.08rem;
     bottom: -1px;
-    border-top: 4px solid #D33A31;
-    width: 118%;
+    border-top: 0.03rem solid #d33a31;
+    left: -0.2rem;
+    right: -0.2rem;
 }
 
 .playlists {
@@ -261,7 +261,7 @@ content: " ";
     background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    padding-top:3rem;
+    padding-top:2.8rem;
 }
 .hottop::after{
     content: '';
