@@ -52,33 +52,33 @@ $(function(){
             })
         }
     })
-//     setTimeout(function(){
-//     $.get('./hotsongs.json').then(function(Response){
-//     let items = Response
-//     items.forEach((i)=>{
-//         let $li = $(`
-//                  <li>
-//                    <a href="./song.html?id=${i.id}">
-//                         <div class="number">${i.number}</div>
-//                         <div class="hotsongInfo">
-//                             <h3>${i.name}<span>${i.singer}</span></h3>
-//                         <svg class="sq">
-//                             <use xlink:href="#icon-sq">
-//                             </use>
-//                         </svg>
-//                         <p>${i.songInfo}</p>
-//                         <svg class="playcircled">
-//                             <use xlink:href="#icon-play-circled">
-//                             </use>
-//                         </svg>
-//                         </div>
-//                     </a>
-//                 </li>
-//             `)
-//             $('#hotlist').append($li)
-//     })
-//     $('#hotsongloading').remove()
-//     }, function(){
-//     })
-// },800)
+    setTimeout(function(){
+    $.get('./hotsongs.json').then(function(Response){
+    let items = Response
+    items.forEach((i)=>{
+        let $li = $(`
+                 <li>
+                   <a href="./song.html?id=${i.id}">
+                        <div class="number">${i.number}</div>
+                        <div class="hotsongInfo">
+                            <h3>${i.name}<span>${i.singer}</span></h3>
+                        <svg class="sq">
+                            <use xlink:href="#icon-sq">
+                            </use>
+                        </svg>
+                        <p>${i.songInfo}</p>
+                        <svg class="playcircled">
+                            <use xlink:href="#icon-play-circled">
+                            </use>
+                        </svg>
+                        </div>
+                    </a>
+                </li>
+            `)
+            $('#hotlist').append($li)
+    })
+    $('#hotsongloading').remove()
+    }, function(){
+    })
+},800)
 })
