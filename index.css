@@ -108,6 +108,7 @@ section>h2:first-child {
 .playlists>ul>li {
     width: calc(33.3333333% - 0.06rem);
     margin-bottom: 0.4rem;
+    position: relative;
 }
 
 .playlists>ul>li>p {
@@ -243,14 +244,14 @@ section>h2:first-child {
     transform: scale(.75);
 }
 
-/*热搜榜*/
+/*热歌榜*/
 
 .hottop{
     position: relative;
     background: url(http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
     background-size: 100% 100%;
     overflow: hidden;
-    margin-top: 2.789rem;
+    padding-top:3rem;
 }
 .hottop::after{
     content: '';
