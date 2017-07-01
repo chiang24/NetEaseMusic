@@ -10,6 +10,15 @@ $(function () {
         initText(name,lyric)
 
     })
+        $.get('./hotsongs.json').then(function (response) {
+        let songs = response
+        let song = songs.filter(s=>s.id === id)[0]
+        let {url,name,lyric} = song
+
+        initPlayer.call(undefined,url)
+        initText(name,lyric)
+
+    })
 
     function initPlayer(url){
     let audio = document.createElement('audio')
@@ -109,6 +118,21 @@ $(function () {
         $img.css("background-image",`url(${backgroundImage})`)
     })
         $.get('./songs.json').then(function(response){
+        let songs =response
+        let song = songs.filter(s=>s.id === id)[0]
+        let {cover} = song
+        let $cover = $('.cover')
+        console.log($cover)
+        $cover[0].src = cover
+    })
+        $.get('./hotsongs.json').then(function(response){
+        let songs =response
+        let song = songs.filter(s=>s.id === id)[0]
+        let {backgroundImage} = song
+        let $img = $('#img')
+        $img.css("background-image",`url(${backgroundImage})`)
+    })
+        $.get('./hotsongs.json').then(function(response){
         let songs =response
         let song = songs.filter(s=>s.id === id)[0]
         let {cover} = song
