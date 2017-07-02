@@ -42,7 +42,7 @@ section>h2:first-child {
 
 .topbar .topsvg {
     width: 4.3rem;
-    padding: 0.52rem 0.26rem;
+    padding: 0.52rem 0rem 0.52rem 0.26rem;
 }
 
 .topbar .downloadAPP {
@@ -64,7 +64,7 @@ section>h2:first-child {
 }
 
 .siteNav>ol li {
-    flex: 1;
+    flex-grow: 1;
     font-size: 0.4rem;
     vertical-align: middle;
     text-align: center;
