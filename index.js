@@ -100,6 +100,8 @@ let timer = undefined
         timer = setTimeout(function(){
             search(value).then((result)=>{
                 timer = undefined
+                $('#searchoutput').children('li').remove()
+                $('#searchoutput').children('p').remove()
                 if(result.length !== 0 ){
                         $('.searchkey').remove()
                     for(var i=0;i<result.length;i++){
