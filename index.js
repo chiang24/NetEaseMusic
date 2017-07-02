@@ -124,10 +124,9 @@ let timer = undefined
                                  
                                 $('#searchoutput').append($li)
                          }
-                       
                 }else{
                      $('.searchkey').remove()
-                    let $p = '<p id="sorry">非常抱歉，没有找到这首歌</p>'
+                    let $p = '<p id="nosearch">暂无搜索结果</p>'
                     $('#searchoutput').append($p)
                 }
             })

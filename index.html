@@ -211,6 +211,7 @@
                 </div>
         </li>
         <li class="hotsearch">
+            <div class="searchtop">
                 <div class="searchinput">
                     <svg class="search">
                         <use xlink:href="#icon-search">
@@ -218,6 +219,8 @@
                     </svg>
                     <input type="text" placeholder="搜索歌曲、歌手、专辑" id="searchsong" autocomplete="off">
                 </div>
+            </div>
+
                     <div class="searchkey">
                         <h3>热门搜索</h3>
                         <div class="hotkey">  
@@ -226,11 +229,12 @@
                         <a href="">追光者</a>
                         <a href="">shape of you</a>
                         <a href="">黑胶背后</a>
+                        <a href="">...</a>
                         </div>
                       
                     </div>
                     <div class="searchresult">
-                         <p id="searchloading" style="display:none;">
+                         <p id="searchloading" class="sloading">
             <img src="http://os08tn3ud.bkt.clouddn.com/loading.gif" alt="">
         </p>
                         <ol id="searchoutput"></ol>

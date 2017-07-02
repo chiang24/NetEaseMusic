@@ -428,16 +428,17 @@ content: " ";
 .hotsearch{
     padding-top:2.8rem; 
 }
+.searchtop{
+        border-bottom: 1px solid #e6e6e6;
+        padding: .4rem 0.2666rem; 
+}
 .searchinput{
     position: relative;
-    margin: .4rem 0.2666rem; 
+
     border-radius: 0.8rem;
     background-color: #EBECEC;
     line-height: 0.8rem;
-    padding: 0 0.8rem;
     height: 0.8rem;
-
-
 }
 .search{
     width: 0.4rem;
@@ -461,9 +462,11 @@ content: " ";
     outline: none;
     border:none;
     display: block;
+    padding-left: 0.83rem;
+    position: relative;
 }
 .searchkey{
-        border-top: 1px solid #e6e6e6;
+
         padding: 0.4rem 0.266rem 0;
 }
 .searchkey>h3{
@@ -482,6 +485,18 @@ content: " ";
     line-height: 1.2;
 }
 #searchoutput{
-    padding-left: 0.2rem;
-    
+    padding-left: 0.2rem;  
+}
+#searchoutput p#nosearch{
+    padding: .5rem 0.533rem;
+    text-align: center;
+    font-size: 0.373rem;
+    color: #333;
+}
+.searchresult .sloading.active{
+ display: block;
+ text-align: center;
+}
+.searchresult .sloading{
+    display: none;
 }
