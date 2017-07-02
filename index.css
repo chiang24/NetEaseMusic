@@ -76,6 +76,8 @@ section>h2:first-child {
     display: inline-block;
     line-height: 1.0666rem;
     position: relative;
+    height: 1.04rem;
+    line-height: 1.04rem;
 }
 
 .siteNav>ol>li.active {
