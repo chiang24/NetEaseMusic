@@ -155,7 +155,6 @@ let timer = undefined
                 { "id":17,"name":"刚好遇见你","singer":"","songInfo":"李玉刚-刚好遇见你"},
                 { "id":18,"name":"全部都是你","singer":"","songInfo":"Dragon Pig / CNBALLER / CLOUD WANG-全部都是你"},
                 { "id":19,"name":"Shape of You","singer":"","songInfo":"Ed Sheeran-Shape Of You"},
-                { "id":20,"name":"下一站茶山刘","singer":"","songInfo":"房东的猫-拾贰"},
                 { "id":21,"name":"Despacito (Remix)","singer":"","songInfo":"Luis Fonsi / Daddy Yankee / Justin Bieber-Despacito (Remix)"},
                 { "id":22,"name":"小半","singer":"","songInfo":"陈粒-小梦大半"},
                 { "id":23,"name":"마지막처럼 ","singer":"","songInfo":"BLACKPINK-마지막처럼"}
