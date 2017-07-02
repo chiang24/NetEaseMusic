@@ -211,13 +211,31 @@
                 </div>
         </li>
         <li class="hotsearch">
-        <p id="searchloading">
+                <div class="searchinput">
+                    <svg class="search">
+                        <use xlink:href="#icon-search">
+                        </use>
+                    </svg>
+                    <input type="text" placeholder="搜索歌曲、歌手、专辑" id="searchsong" autocomplete="off">
+                </div>
+                    <div class="searchkey">
+                        <h3>热门搜索</h3>
+                        <a href="">后台数据只存了页面里已有的音乐</a>
+                        <a href="">一笑倾城</a>
+                        <a href="">追光者</a>
+                        <a href="">shape of you</a>
+                        <a href="">黑胶背后</a>
+                    </div>
+                    <div class="searchresult">
+                         <p id="searchloading">
             <img src="http://os08tn3ud.bkt.clouddn.com/loading.gif" alt="">
         </p>
+                        <ol id="searchoutput"></ol>
+                    </div>
         </li>
     </ol>
     
-    <script src="//at.alicdn.com/t/font_g2yhzcvm02ne9udi.js"></script>
+    <script src="//at.alicdn.com/t/font_lp0fgpe3o62sm7vi.js"></script>
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./index.js"></script>
 </body>

@@ -47,7 +47,7 @@ $(function(){
             })
         }else if(index === 2){
             $.get('./search.json').then((response)=>{
-                $li.text(response.content)
+                //$li.text(response.content)
                 $li.attr('data-downloaded','yes')
             })
         }
