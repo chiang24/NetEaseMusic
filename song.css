@@ -114,9 +114,9 @@ body {
 .disc-container .icon-wrapper {
     position: absolute;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     border: 1px solid white;
     height: 1.6rem;
     width: 1.6rem;
