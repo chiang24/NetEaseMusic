@@ -94,6 +94,8 @@ body {
     border-radius: 50%;
     animation: circle 20s infinite linear;
     animation-play-state: paused;
+    left: 2.5rem;
+    top:14.75vw;
 }
 
 .disc-container.playing .lightshadow,
