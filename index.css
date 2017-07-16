@@ -500,3 +500,9 @@ content: " ";
 .searchresult .sloading{
     display: none;
 }
+.searchkey.active{
+display: block;
+} 
+.searchkey{
+    display: none;
+}

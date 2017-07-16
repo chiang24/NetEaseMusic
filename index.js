@@ -100,10 +100,11 @@ let timer = undefined
         timer = setTimeout(function(){
             search(value).then((result)=>{
                 timer = undefined
+                 $(".searchkey").addClass('active')
                 $('#searchoutput').children('li').remove()
                 $('#searchoutput').children('p').remove()
                 if(result.length !== 0 ){
-                        $('.searchkey').remove()
+                        $('.searchkey').removeClass('active')
                     for(var i=0;i<result.length;i++){
                         let $li = $(`
                 <li>
@@ -127,7 +128,7 @@ let timer = undefined
                                 $('#searchoutput').append($li)
                          }
                 }else{
-                     $('.searchkey').remove()
+                    $('.searchkey').removeClass('active')
                     let $p = '<p id="nosearch">暂无搜索结果</p>'
                     $('#searchoutput').append($p)
                 }
@@ -164,9 +165,6 @@ let timer = undefined
 
             let result = database.filter(function(item){      
                 return item.name.indexOf(keyword)>=0
-
-
-
             })
             setTimeout(function(){
                 resolve(result)
